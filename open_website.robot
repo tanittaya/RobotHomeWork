@@ -8,7 +8,7 @@ Library    Collections
 Library    String
 Library    BuiltIn
 Library    XML
-Variables    ../Testing/dta.yaml
+Variables    ../Testing/data.yaml
 
 
 *** Test Cases ***
@@ -110,4 +110,5 @@ Click logout
 
 Verify back to login
     Wait Until Element Is Visible    //*[@id="login-button"]    timeout=30s
+
     
