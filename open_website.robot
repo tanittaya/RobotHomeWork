@@ -1,6 +1,4 @@
 
-#662110202 Wangboon Bualoilom
-
 *** Settings ***
 Library    SeleniumLibrary
 Library    OperatingSystem
@@ -8,7 +6,7 @@ Library    Collections
 Library    String
 Library    BuiltIn
 Library    XML
-Variables    ../Testing/data.yaml
+Variables    ./data.yaml
 
 
 *** Test Cases ***
