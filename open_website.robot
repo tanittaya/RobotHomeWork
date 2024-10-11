@@ -89,10 +89,14 @@ Input postal code
 Click continue
     Click Button    //*[@id="checkout_info_container"]/div/form/div[2]/input
 
-Verify continue page    
-    Wait Until Element Is Visible    //*[@id="contents_wrapper"]/div[2]    timeout=30s
+Verify continue page
     Wait Until Element Is Visible    //*[@id="item_4_title_link"]/div    timeout=30s
-    Wait Until Element Is Visible    //*[@id="checkout_summary_container"]/div/div[1]/div[3]/div[2]/div[2]    timeout=30s
+    ${item_name}=    Get Text    //*[@id="item_4_title_link"]/div
+    Should Be Equal    ${item_name}    Sauce Labs Backpack
+
+    ${item_price}=    Get Text    //*[@id="checkout_summary_container"]/div/div[1]/div[3]/div[2]/div[2]
+    Should Be Equal    ${item_price}    $29.99
+
     Wait Until Element Is Visible    //*[@id="checkout_summary_container"]/div/div[2]/div[5]    timeout=30s
     Wait Until Element Is Visible    //*[@id="checkout_summary_container"]/div/div[2]/div[6]    timeout=30s
     Wait Until Element Is Visible    //*[@id="checkout_summary_container"]/div/div[2]/div[7]    timeout=30s
