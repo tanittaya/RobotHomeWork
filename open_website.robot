@@ -8,8 +8,6 @@ Library    BuiltIn
 Library    XML
 Variables    ./data.yaml
 
-
-
 *** Test Cases ***
 Open web site testing
     Open browser chrome    ${url}    ${browser}

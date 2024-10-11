@@ -10,7 +10,6 @@ name:
     password: secret_sauce
 
 
-
 url: https://www.saucedemo.com/v1/index.html
 browser: chrome
 
